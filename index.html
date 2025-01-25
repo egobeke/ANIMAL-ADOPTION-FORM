@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta > 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title> Adopt Your Favourite Animal</title>
+</head>
+
+<body>
+<div class="container">
+<header>
+    <h1> PET ADOPTION FORM</h1>
+    <p id="description">Please fill out this form with the required information</p>
+</header>
+
+<form id="adoption-form" method="post" action="">
+<main>
+    <fieldset>
+   <label for="first-name">First Name:
+    <input id="first-name" name="first-name" type="text" placeholder="Enter your name" required>
+   </label>
+
+   <label for="last-name">Last Name:
+<input id="last-name" name="last-name" type="text" placeholder="Enter your name" required>
+   </label>
+
+   <label for="email">Email:
+    <input id="email" name="email" type="email" placeholder="egobeke01@gmail.com" required>
+   </label>
+
+   <label for="age">Age:
+    <input id="number" name="age" type="number" min="18" max="70" placeholder="18" required>
+   </label>
+
+   <label for="gender">Gender:
+<select>
+    <option></option>
+    <option>Male</option>
+    <option>Female</option>
+</select>
+   </label>
+
+   <label for="contact">Contact:
+<input id="number" name="contact" type="tel" pattern="+[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+234-204-902-5321" required>
+   </label>
+</fieldset>
+
+
+<fieldset>
+<legend>Employment Details</legend>
+<label for="Occupation">Occupation:
+<input id="Occupation" name="Occupation" type="text" required>
+</label>
+
+<label for="employer-name">Employer's Name:
+<input id="name" name="employer-name" type="text" required>
+</label>
+
+<label for="work-contact">Work Contact:
+    <input id="work-contact" name="work-contact" type="tel" required>
+</label>
+</fieldset>
+
+
+<fieldset>
+<legend>Pet Preference</legend>
+<label class="yes-no" for="question" required>Have you adopted a pet before?
+<label><input id="yes" type="radio" name="question" value="yes">Yes</label>
+<label><input id="no" type="radio" name="question" value="no">No</label> 
+</label>
+
+<label for="question">Who are you adopting this pet for?
+    <input id="question" name="question" type="text" required>
+</label>
+
+<label for="type-of-pet">What type of pet do you want to adopt?
+<select id="type-of-pet" name="type-of-pet" required>
+    <option value="1"></option>
+    <option value="2">Cats</option>
+    <option value="3">Dogs</option>
+    <option value="4">Parrots</option>
+    <option value="5">Spiders</option>
+    <option value="6">Rabbits</option>
+</select>
+</label>
+
+<label for="reason">Why do you want to adopt this pet?
+<textarea id="reason" name="reason" rows="4" cols="40" placeholder="I want to adopt this pet ....." required></textarea>
+</label>
+
+<label for="care">How do you plan to care for this pet?
+<textarea name="care" id="care" rows="4" cols="40" placeholder="By providing ...." required></textarea>
+</label>
+</fieldset>
+</main>
+
+        <footer>
+<label for="agreement">I confirm that the information I have provided is accurate and I am committed to providing a stable, conducive, and proper care for this pet.
+<input class="inline" id="agreement" name="agreement" type="checkbox" required>
+</label>
+<button id="submit" type="submit" value="submit">Submit</button>
+        </footer>
+    </form>
+</div>
+</body>
+</html>
